@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f766e; /* Deep Teal */
+  --color-secondary: #d4af37; /* Gold */
+  --color-accent: #fcd34d; /* Cream/Light Gold */
+  --color-accent2: #fef3c7; /* Lighter Cream */
+  --color-accent3: #115e59; /* Deep Green */
+  --color-background: #fafaf9; /* Warm White/Cream */
+  --color-dark: #1c1917; /* Dark Stone */
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  background-color: var(--color-background);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.text-primary { color: var(--color-primary); }
+.bg-primary { background-color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.bg-accent { background-color: var(--color-accent); }
+.text-dark { color: var(--color-dark); }
+.bg-dark { background-color: var(--color-dark); }
+
+html {
+  scroll-behavior: smooth;
+}
